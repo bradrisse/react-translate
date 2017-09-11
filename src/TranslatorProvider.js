@@ -1,7 +1,8 @@
-import React, { Component, PropTypes, Children } from "react"
+import React, { Children } from "react"
+import PropTypes from 'prop-types'
 import createTranslator from "./createTranslator"
 
-class TranslatorProvider extends Component {
+class TranslatorProvider extends React.Component {
 
   getChildContext() {
     const { translations } = this.props
